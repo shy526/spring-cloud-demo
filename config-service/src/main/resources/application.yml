@@ -1,0 +1,10 @@
+server:
+  context-path: /
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sunjiaqing/spring-cloud-demo
+          username: 用户名
+          password: 密码
