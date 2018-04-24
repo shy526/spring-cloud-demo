@@ -10,4 +10,10 @@ spring:
       #label: release
   application:
     # 对应的Config Server的配置文件对应的application
-    name: test
+    name: password
+encrypt:
+  key-store:
+   location: classpath:/server.jks
+   password: letmein
+   alias: mytestkey
+   secret: changeme
