@@ -1,0 +1,13 @@
+# 引导文件
+spring:
+  cloud:
+    config:
+      # Config Server 地址
+      uri: http://localhost:8090
+      # 对应的Config Server的配置文件对应的profile，即环境
+      profile: test
+      # Git分支,默认master
+      #label: release
+  application:
+    # 对应的Config Server的配置文件对应的application
+    name: test

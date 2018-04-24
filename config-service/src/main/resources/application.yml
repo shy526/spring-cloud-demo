@@ -1,10 +1,17 @@
 server:
-  context-path: /
+  port: 8090
 spring:
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/sunjiaqing/spring-cloud-demo
-          username: 用户名
-          password: 密码
+          uri: https://github.com/sunjiaqing/spring-cloud-config/
+          username:
+          password:
+          #searchPaths: searchPaths-demo,dmeo*,*
+encrypt:
+  key-store:
+   location: classpath:/server.jks
+   password: letmein
+   alias: mytestkey
+   secret: changeme
