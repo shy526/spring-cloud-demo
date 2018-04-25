@@ -5,12 +5,12 @@ spring:
       # Config Server 地址
       uri: http://localhost:8090
       # 对应的Config Server的配置文件对应的profile，即环境
-      profile: test
+      profile: test,xx
       # Git分支,默认master
       #label: release
   application:
     # 对应的Config Server的配置文件对应的application
-    name: password
+    name: password,pa
 encrypt:
   key-store:
    location: classpath:/server.jks

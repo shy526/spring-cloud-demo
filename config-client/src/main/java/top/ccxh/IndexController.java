@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
     @Value("${test}")
     private String test;
+
     @GetMapping("/")
     public String index(){
         return test;

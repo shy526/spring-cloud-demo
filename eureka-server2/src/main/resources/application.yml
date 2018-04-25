@@ -1,0 +1,15 @@
+server:
+  port: 8094
+eureka:
+  instance:
+    preferIpAddress: true
+    hostname: eurekaserver02
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8093/eureka/
+  server:
+    #关闭自我保护模式
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 5000

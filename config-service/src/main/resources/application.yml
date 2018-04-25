@@ -7,7 +7,8 @@ spring:
         encrypt:
           enabled: true
         git:
-          uri: https://github.com/sunjiaqing/spring-cloud-config/
+          #uri: https://github.com/sunjiaqing/spring-cloud-config/
+          uri: file:d:\Users\admin\Desktop\bower-demo\spring-cloud-config
           username:
           password:
           #searchPaths: searchPaths-demo,dmeo*,*
